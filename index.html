@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeGlow Makeup 💄 | Beauty Redefined</title>
+    <style>
+        /* CSS with black background and gold accents */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+
+        body {
+            background: black;
+            color: #d4af37; /* Gold for text */
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #d4af37, #b8860b); /* Gold gradient */
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in;
+        }
+
+        header h1 {
+            color: black; /* Black text for contrast on gold */
+            font-size: 2.8rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            margin: 1rem 0;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fff9c4; /* Light gold on hover */
+            transform: scale(1.1);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            background: #1a1a1a; /* Dark gray for contrast */
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+            animation: slideUp 0.8s ease-out;
+        }
+
+        h2 {
+            color: #d4af37; /* Gold for titles */
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            font-weight: normal;
+        }
+
+        /* Specific styles for Tableau section */
+        .tableau-section h2 {
+            color: black; /* Black for Beauty Trends title */
+        }
+
+        .tableau-section p {
+            color: black; /* Black for the paragraph */
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: #2c2c2c; /* Slightly lighter gray */
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Tableau Section */
+        .tableau-section {
+            background: linear-gradient(to bottom right, #d4af37, #b8860b); /* Gold gradient */
+            padding: 3rem;
+        }
+
+        .tableau-embed {
+            margin: 1.5rem 0;
+            border-radius: 15px;
+            overflow: hidden;
+            min-height: 600px; /* Ensure space for Tableau viz */
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, #d4af37, #b8860b); /* Gold gradient */
+            color: black;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>LuxeGlow Makeup 💋</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop 🎀</a>
+            <a href="#trends">Trends 📊</a>
+            <a href="#contact">Contact 💌</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Welcome Section -->
+        <section class="section" id="home">
+            <h2>Unleash Your Inner Glow 🌟</h2>
+            <p>Explore our luxurious makeup collection crafted to enhance your natural beauty. Shine bright with LuxeGlow! ✨</p>
+        </section>
+
+        <!-- Products Section -->
+        <section class="section" id="shop">
+            <h2>Our Makeup Magic 💄</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200x200.png?text=Lipstick" alt="Lipstick">
+                    <h3>Velvet Lipstick 💋</h3>
+                    <p>$24.99</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200x200.png?text=Eyeshadow" alt="Eyeshadow">
+                    <h3>Shimmer Eyeshadow 👁️</h3>
+                    <p>$19.99</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200x200.png?text=Foundation" alt="Foundation">
+                    <h3>Flawless Foundation 🌹</h3>
+                    <p>$34.99</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200x200.png?text=Blush" alt="Blush">
+                    <h3>Rose Blush 🌸</h3>
+                    <p>$14.99</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tableau Trends Section -->
+        <section class="section tableau-section" id="trends">
+            <h2>Beauty Trends 📈</h2>
+            <p>Discover the latest makeup trends and customer favorites with our Tableau insights! 🌟</p>
+            <div class="tableau-embed">
+                <div id="tableauViz"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 LuxeGlow Makeup | Crafted with Passion 💖 | Contact Us: glow@luxeglow.com</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script>
+        // Tableau JavaScript API Integration
+        function initViz() {
+            const vizUrl = 'https://public.tableau.com/views/_17440211245580/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link';
+            const vizContainer = document.getElementById('tableauViz');
+            const options = {
+                width: '100%',
+                height: '600px',
+                hideTabs: true,
+                hideToolbar: true,
+                onFirstInteractive: function () {
+                    console.log('Tableau visualization loaded successfully');
+                }
+            };
+            try {
+                const viz = new tableau.Viz(vizContainer, vizUrl, options);
+            } catch (error) {
+                console.error('Error loading Tableau visualization:', error);
+                vizContainer.innerHTML = '<p style="color: #d4af37; text-align: center;">Unable to load Tableau visualization. Please try again later.</p>';
+            }
+        }
+
+        // Smooth Scroll for Navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const section = document.querySelector(this.getAttribute('href'));
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Load Tableau Viz when page loads
+        window.onload = function() {
+            initViz();
+        };
+    </script>
+</body>
+</html>
